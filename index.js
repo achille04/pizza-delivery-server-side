@@ -84,6 +84,12 @@ app.get('/', (req, res) => {
 
 });
 
+app.get('/hello', (req, res) => {
+
+    res.send('Hello Updated Here')
+
+})
+
 app.listen(port, () => {
 
     console.log('Running Pizza Delivery Server on Port', port);
